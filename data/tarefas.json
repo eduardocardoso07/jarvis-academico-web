@@ -17,11 +17,36 @@
     {
         "id": 4,
         "descricao": "Estudar para a prova de IHC.",
-        "concluida": false
+        "concluida": true
     },
     {
         "id": 5,
         "descricao": "revisar o conteúdo de embeddings",
+        "concluida": true
+    },
+    {
+        "id": 6,
+        "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+        "concluida": false
+    },
+    {
+        "id": 7,
+        "descricao": "mexer no código do jarvis",
+        "concluida": false
+    },
+    {
+        "id": 8,
+        "descricao": "Fazer a correção do front end",
+        "concluida": false
+    },
+    {
+        "id": 9,
+        "descricao": "mexer no codigo fonte da função decidir_resposta",
+        "concluida": false
+    },
+    {
+        "id": 10,
+        "descricao": "Mexer na lógica do tool calling",
         "concluida": true
     }
 ]

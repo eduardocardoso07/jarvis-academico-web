@@ -40,7 +40,39 @@ def ferramenta_concluir_tarefa(id_tarefa):
         "id_tarefa": id_tarefa
     }
 
-    tarefa = concluir_tarefa(id_tarefa)
+    # Tenta converter o ID recebido para número inteiro
+    try:
+        id_tarefa_convertido = int(id_tarefa)
+
+    except ValueError:
+        # Se a Gemma mandar algo como "essa", "ela" ou outro texto,
+        # o sistema tenta identificar se existe apenas uma tarefa pendente.
+        tarefas = listar_tarefas()
+
+        tarefas_pendentes = []
+
+        for tarefa in tarefas:
+            if tarefa["concluida"] == False:
+                tarefas_pendentes.append(tarefa)
+
+        # Se existir apenas uma tarefa pendente, o sistema conclui essa tarefa
+        if len(tarefas_pendentes) == 1:
+            id_tarefa_convertido = tarefas_pendentes[0]["id"]
+
+        else:
+            saida = {
+                "erro": "Não consegui identificar qual tarefa deve ser concluída. Informe o ID da tarefa."
+            }
+
+            registrar_log(
+                nome_ferramenta="ferramenta_concluir_tarefa",
+                entrada=entrada,
+                saida=saida
+            )
+
+            return saida
+
+    tarefa = concluir_tarefa(id_tarefa_convertido)
 
     registrar_log(
         nome_ferramenta="ferramenta_concluir_tarefa",

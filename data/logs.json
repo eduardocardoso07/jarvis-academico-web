@@ -846,5 +846,1386 @@
             "descricao": "Estudar KNN para a prova de IA.",
             "concluida": true
         }
+    },
+    {
+        "data_hora": "2026-05-25T15:52:10.626168",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": false
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T15:54:09.134302",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T15:55:20.416317",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "semana_que_vem",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-25T15:55:50.752928",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": false
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:08:58.667119",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": false
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:16:53.173427",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": false
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:18:02.310273",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": "essa"
+        },
+        "saida": {
+            "id": 4,
+            "descricao": "Estudar para a prova de IHC.",
+            "concluida": true
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:19:44.261711",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:20:17.082438",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:20:55.620568",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:21:43.338402",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            },
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:22:20.135923",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "O que o material fala sobre inteligência artificial?"
+        },
+        "saida": {
+            "resposta": "De acordo com o material fornecido, Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Entre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.578416645526886
+                },
+                {
+                    "documento": "05_estrutura_dados_completo.pdf",
+                    "conteudo": "Estrutura de Dados e Algoritmos\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.",
+                    "similaridade": 0.4552134871482849
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\n Resumo sobre levantamento, análise e documentação de requisitos de software.\nO que é engenharia de requisitos?\nEngenharia de requisitos é a área da engenharia de software responsável por entender,\ndocumentar, analisar e gerenciar o que um sistema precisa fazer. Antes de programar, é\nnecessário compreender o problema, os usuários e as regras que o software deve atender.\nUm requisito mal entendido pode gerar retrabalho, atrasos e sistemas que não resolvem o\nproblema real do usuário. Por isso, essa etapa é essencial no desenvolvimento de software.\nIdeia central: transformar necessidades dos usuários e da organização em especificações claras para o\ndesenvolvimento do sistema.\nTipos de requisitos\nTipo\nDescrição\nFuncionais\nDescrevem o que o sistema deve fazer, como cadastrar usuário ou gerar\nrelatório.\nNão funcionais\nDescrevem qualidades do sistema, como segurança, desempenho e\nusabilidade.\nRegras de negócio\nDefinem normas e restrições do domínio, como prazos, permissões e\ncálculos.\nEtapas principais\n Elicitação: coletar informações com usuários e interessados.\n Análise: organizar, priorizar e resolver conflitos entre requisitos.\n Especificação: registrar os requisitos de forma clara.\n Validação: confirmar se os requisitos representam a necessidade real.\n Gerenciamento: controlar mudanças ao longo do projeto.\nResumo: Engenharia de Requisitos\nPágina 1 de 2",
+                    "similaridade": 0.4158009886741638
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:23:26.541800",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "quem é o neymar?"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder a essa pergunta.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.3492899537086487
+                },
+                {
+                    "documento": "resumo_aws.pdf",
+                    "conteudo": "Resumo: AWS\nConceitos principais sobre Amazon Web Services e computação em nuvem.\nO que é AWS?\nAWS significa Amazon Web Services. É uma plataforma de computação em nuvem usada para\ncontratar recursos de tecnologia pela internet, como servidores, armazenamento, bancos de dados e\nserviços de rede.\nA ideia é evitar que uma empresa precise comprar e manter toda a infraestrutura física. Em vez\ndisso, ela usa recursos sob demanda e paga de acordo com o uso.\nIdeia central: usar infraestrutura em nuvem para criar, hospedar e escalar sistemas com mais flexibilidade.\nPor que a nuvem é importante?\n•\nReduz a necessidade de servidores próprios e manutenção local.\n•\nPermite criar ambientes de desenvolvimento, teste e produção com rapidez.\n•\nAjuda aplicações a crescerem quando o número de usuários aumenta.\n•\nFacilita a disponibilidade de sistemas em diferentes regiões.\nModelos de serviço\nModelo\nDescrição\nIaaS\nInfraestrutura básica, como máquinas virtuais, redes e armazenamento.\nPaaS\nPlataforma pronta para desenvolver e executar aplicações.\nSaaS\nSoftware pronto para uso pela internet.\nResumo: AWS\nPágina 1 de 2",
+                    "similaridade": 0.3025308847427368
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\nPágina 3 de 2\nResumo: Engenharia de Requisitos\nPágina 3 de 2",
+                    "similaridade": 0.29927659034729004
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:55:12.519120",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            },
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:55:32.744429",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": "trabalho"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-25T16:55:59.478962",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T16:56:55.479946",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me explique o que é IA"
+        },
+        "saida": {
+            "resposta": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Entre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.6492698192596436
+                },
+                {
+                    "documento": "05_estrutura_dados_completo.pdf",
+                    "conteudo": "Estrutura de Dados e Algoritmos\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.",
+                    "similaridade": 0.49008816480636597
+                },
+                {
+                    "documento": "resumo_computacao_distribuida.pdf",
+                    "conteudo": "Resumo: Computação Distribuída\nConceitos essenciais sobre sistemas formados por vários computadores conectados.\nO que é computação distribuída?\nComputação distribuída é um modelo em que vários computadores independentes trabalham juntos\npara realizar uma tarefa. Para o usuário, o sistema pode parecer único, mas internamente existem\nvários nós se comunicando pela rede.\nEsse conceito aparece em serviços de nuvem, redes sociais, bancos digitais, sistemas de busca,\nstreaming e bancos de dados modernos.\nIdeia central: dividir responsabilidades entre diferentes máquinas para ganhar desempenho,\ndisponibilidade e escalabilidade.\nCaracterísticas principais\n•\nComunicação entre processos ou servidores por meio da rede.\n•\nExecução cooperativa ou paralela de tarefas.\n•\nCompartilhamento de processamento, dados e armazenamento.\n•\nPossibilidade de falhas parciais, quando uma máquina cai e outras continuam.\nExemplos\nExemplo\nUso da distribuição\nStreaming\nVários servidores entregam vídeos para usuários de regiões diferentes.\nBanco digital\nServiços separados cuidam de login, saldo, transações e notificações.\nBusca na internet\nMuitas máquinas processam índices e consultas ao mesmo tempo.\nResumo: Computação Distribuída\nPágina 1 de 2",
+                    "similaridade": 0.44601601362228394
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:57:31.443009",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "vc utilizou o documento base para responder isso?"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder à sua pergunta.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.6008172035217285
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos -\n continuação\nTécnicas de levantamento\nExistem várias formas de descobrir requisitos. A escolha depende do contexto do projeto, do tipo\nde usuário e do tempo disponível.\n Entrevistas com usuários e responsáveis pelo sistema.\n Questionários para coletar respostas de um grupo maior.\n Observação do uso real de um processo ou sistema existente.\n Análise de documentos, formulários e regras já utilizadas.\n Protótipos para validar ideias antes da implementação completa.\nCaracterísticas de um bom requisito\n Clareza: deve ser fácil de entender.\n Completude: deve trazer informações suficientes.\n Consistência: não deve contradizer outros requisitos.\n Verificabilidade: deve ser possível testar se foi atendido.\n Rastreabilidade: deve ser possível acompanhar sua origem e mudanças.\nExemplo simples\nRequisito funcional: “O sistema deve permitir que o aluno visualize suas notas por disciplina.”\nRequisito não funcional relacionado: “A tela de notas deve carregar em até 3 segundos em\ncondições normais de uso.”\nImportância no projeto\nA engenharia de requisitos aproxima a equipe técnica dos usuários. Ela ajuda a evitar que o\nsistema seja desenvolvido com base em suposições e aumenta a chance de entregar uma solução\nrealmente útil.\nResumo final: engenharia de requisitos é a base para construir sistemas alinhados às necessidades dos\nusuários, reduzindo erros, retrabalho e problemas de comunicação.\nResumo: Engenharia de Requisitos\nPágina 2 de 2",
+                    "similaridade": 0.52503502368927
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\n Resumo sobre levantamento, análise e documentação de requisitos de software.\nO que é engenharia de requisitos?\nEngenharia de requisitos é a área da engenharia de software responsável por entender,\ndocumentar, analisar e gerenciar o que um sistema precisa fazer. Antes de programar, é\nnecessário compreender o problema, os usuários e as regras que o software deve atender.\nUm requisito mal entendido pode gerar retrabalho, atrasos e sistemas que não resolvem o\nproblema real do usuário. Por isso, essa etapa é essencial no desenvolvimento de software.\nIdeia central: transformar necessidades dos usuários e da organização em especificações claras para o\ndesenvolvimento do sistema.\nTipos de requisitos\nTipo\nDescrição\nFuncionais\nDescrevem o que o sistema deve fazer, como cadastrar usuário ou gerar\nrelatório.\nNão funcionais\nDescrevem qualidades do sistema, como segurança, desempenho e\nusabilidade.\nRegras de negócio\nDefinem normas e restrições do domínio, como prazos, permissões e\ncálculos.\nEtapas principais\n Elicitação: coletar informações com usuários e interessados.\n Análise: organizar, priorizar e resolver conflitos entre requisitos.\n Especificação: registrar os requisitos de forma clara.\n Validação: confirmar se os requisitos representam a necessidade real.\n Gerenciamento: controlar mudanças ao longo do projeto.\nResumo: Engenharia de Requisitos\nPágina 1 de 2",
+                    "similaridade": 0.5110131502151489
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:57:51.606625",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me explique sobre o palmeiras"
+        },
+        "saida": {
+            "resposta": "O Palmeiras atualmente tem 0 títulos mundiais.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.5241740942001343
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos -\n continuação\nTécnicas de levantamento\nExistem várias formas de descobrir requisitos. A escolha depende do contexto do projeto, do tipo\nde usuário e do tempo disponível.\n Entrevistas com usuários e responsáveis pelo sistema.\n Questionários para coletar respostas de um grupo maior.\n Observação do uso real de um processo ou sistema existente.\n Análise de documentos, formulários e regras já utilizadas.\n Protótipos para validar ideias antes da implementação completa.\nCaracterísticas de um bom requisito\n Clareza: deve ser fácil de entender.\n Completude: deve trazer informações suficientes.\n Consistência: não deve contradizer outros requisitos.\n Verificabilidade: deve ser possível testar se foi atendido.\n Rastreabilidade: deve ser possível acompanhar sua origem e mudanças.\nExemplo simples\nRequisito funcional: “O sistema deve permitir que o aluno visualize suas notas por disciplina.”\nRequisito não funcional relacionado: “A tela de notas deve carregar em até 3 segundos em\ncondições normais de uso.”\nImportância no projeto\nA engenharia de requisitos aproxima a equipe técnica dos usuários. Ela ajuda a evitar que o\nsistema seja desenvolvido com base em suposições e aumenta a chance de entregar uma solução\nrealmente útil.\nResumo final: engenharia de requisitos é a base para construir sistemas alinhados às necessidades dos\nusuários, reduzindo erros, retrabalho e problemas de comunicação.\nResumo: Engenharia de Requisitos\nPágina 2 de 2",
+                    "similaridade": 0.4640734791755676
+                },
+                {
+                    "documento": "resumo_computacao_distribuida.pdf",
+                    "conteudo": "Resumo: Computação Distribuída - continuação\nBenefícios\n•\nEscalabilidade: a capacidade aumenta adicionando mais máquinas.\n•\nDisponibilidade: o sistema pode continuar funcionando mesmo com falhas.\n•\nDesempenho: tarefas podem ser divididas e executadas em paralelo.\n•\nOrganização: componentes diferentes podem cuidar de responsabilidades diferentes.\nDesafios\nSistemas distribuídos são mais complexos porque dependem de rede. Mensagens podem atrasar,\nserviços podem ficar indisponíveis e partes diferentes do sistema podem ter visões temporariamente\ndiferentes dos dados.\n•\nConcorrência: vários componentes acessam recursos ao mesmo tempo.\n•\nConsistência: manter dados corretos entre servidores diferentes.\n•\nTolerância a falhas: continuar funcionando mesmo com quedas.\n•\nSincronização: coordenar ações entre partes independentes.\nConceitos importantes\nAlguns termos frequentes são replicação, particionamento, balanceamento de carga, filas de\nmensagens, microsserviços e consenso. Eles ajudam a construir sistemas mais robustos.\nResumo final: computação distribuída permite criar sistemas grandes e escaláveis, mas exige cuidado com\ncomunicação, falhas, consistência e coordenação.\nResumo: Computação Distribuída\nPágina 2 de 2",
+                    "similaridade": 0.4516637623310089
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:58:12.337061",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "o que é rag"
+        },
+        "saida": {
+            "resposta": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.42635786533355713
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\nPágina 3 de 2\nResumo: Engenharia de Requisitos\nPágina 3 de 2",
+                    "similaridade": 0.3108103275299072
+                },
+                {
+                    "documento": "03_banco_dados_completo.pdf",
+                    "conteudo": "Banco de Dados\nBanco de dados é um tema essencial para a área de TI. Os sistemas gerenciadores de banco de dados\narmazenam e organizam informações de forma estruturada.\nO modelo relacional utiliza tabelas compostas por linhas e colunas. As chaves primárias identificam\nregistros únicos, enquanto as chaves estrangeiras estabelecem relacionamentos.\nSQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT,\nINSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.\nOutro assunto importante é normalização. As formas normais ajudam a reduzir redundância e\ninconsistências. Também é fundamental estudar transações e propriedades ACID.\nBanco de dados é um tema essencial para a área de TI. Os sistemas gerenciadores de banco de dados\narmazenam e organizam informações de forma estruturada.\nO modelo relacional utiliza tabelas compostas por linhas e colunas. As chaves primárias identificam\nregistros únicos, enquanto as chaves estrangeiras estabelecem relacionamentos.\nSQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT,\nINSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.\nOutro assunto importante é normalização. As formas normais ajudam a reduzir redundância e\ninconsistências. Também é fundamental estudar transações e propriedades ACID.",
+                    "similaridade": 0.3063136041164398
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T16:58:29.267858",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me explique sobre atomos"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para explicar sobre átomos.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_aws.pdf",
+                    "conteudo": "Resumo: AWS - continuação\nServiços comuns da AWS\n•\nEC2: servidores virtuais para executar aplicações.\n•\nS3: armazenamento de arquivos, imagens, documentos e backups.\n•\nRDS: bancos de dados relacionais gerenciados.\n•\nLambda: execução de código sem administrar servidores diretamente.\n•\nVPC: criação de redes privadas dentro da nuvem.\n•\nIAM: controle de usuários, permissões e acessos.\nVantagens\nUma vantagem importante é a elasticidade. Uma aplicação pode receber mais recursos quando a\ndemanda aumenta e reduzir esses recursos depois, evitando desperdício.\nTambém há ganho de disponibilidade, pois a nuvem permite distribuir sistemas entre regiões e zonas\nde disponibilidade.\nCuidados\n•\nMonitorar custos para evitar gastos inesperados.\n•\nConfigurar permissões corretamente para manter a segurança.\n•\nPlanejar arquitetura, redes, backups e recuperação de falhas.\n•\nEvitar dependência excessiva de um único provedor sem estratégia.\nResumo final: AWS é uma plataforma de nuvem poderosa para hospedar sistemas, armazenar dados e\nescalar aplicações, mas precisa de planejamento, segurança e controle de custos.\nResumo: AWS\nPágina 2 de 2",
+                    "similaridade": 0.3545988202095032
+                },
+                {
+                    "documento": "resumo_computacao_distribuida.pdf",
+                    "conteudo": "Resumo: Computação Distribuída - continuação\nBenefícios\n•\nEscalabilidade: a capacidade aumenta adicionando mais máquinas.\n•\nDisponibilidade: o sistema pode continuar funcionando mesmo com falhas.\n•\nDesempenho: tarefas podem ser divididas e executadas em paralelo.\n•\nOrganização: componentes diferentes podem cuidar de responsabilidades diferentes.\nDesafios\nSistemas distribuídos são mais complexos porque dependem de rede. Mensagens podem atrasar,\nserviços podem ficar indisponíveis e partes diferentes do sistema podem ter visões temporariamente\ndiferentes dos dados.\n•\nConcorrência: vários componentes acessam recursos ao mesmo tempo.\n•\nConsistência: manter dados corretos entre servidores diferentes.\n•\nTolerância a falhas: continuar funcionando mesmo com quedas.\n•\nSincronização: coordenar ações entre partes independentes.\nConceitos importantes\nAlguns termos frequentes são replicação, particionamento, balanceamento de carga, filas de\nmensagens, microsserviços e consenso. Eles ajudam a construir sistemas mais robustos.\nResumo final: computação distribuída permite criar sistemas grandes e escaláveis, mas exige cuidado com\ncomunicação, falhas, consistência e coordenação.\nResumo: Computação Distribuída\nPágina 2 de 2",
+                    "similaridade": 0.3377752900123596
+                },
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 2\n Conceitos essenciais de C++\n Uma linguagem poderosa, mas que exige atencao com organizacao, memoria e tipos\n de dados.\n5. Programacao orientada a objetos\nUm dos pontos mais importantes de C++ e o suporte a programacao orientada a objetos.\nNesse modelo, o codigo e organizado em classes e objetos. Uma classe funciona como um\nmolde, definindo atributos e comportamentos. Um objeto e uma instancia dessa classe, ou\nseja, algo criado a partir desse molde.\nEsse estilo ajuda a organizar sistemas maiores, separando responsabilidades e facilitando a\nreutilizacao de codigo. Conceitos como encapsulamento, heranca e polimorfismo sao\nbastante usados em projetos escritos em C++.\n6. Compilacao\nC++ e uma linguagem compilada. Isso significa que o codigo-fonte escrito pelo programador\nprecisa passar por um compilador, que transforma o programa em um arquivo executavel.\nEsse processo geralmente deixa o programa final mais rapido, pois ele roda diretamente na\nmaquina depois de compilado.\n7. Vantagens e desafios\nVantagens\nDesafios\nExcelente desempenho e grande controle sobre\nrecursos do sistema.\nSintaxe mais detalhada e curva de aprendizado\nmaior.\nMuito usada em areas que exigem velocidade e\neficiencia.\nErros de memoria podem ocorrer se o codigo nao\nfor bem cuidado.\nPossui bibliotecas e ferramentas maduras.\nProjetos grandes exigem boa organizacao e\npadroes de codigo.\n8. Onde C++ e utilizado?\n Desenvolvimento de jogos e motores graficos.\n Sistemas operacionais, drivers e softwares proximos ao hardware.\n Aplicacoes cientificas, simuladores e programas de engenharia.\n Sistemas embarcados, robótica e dispositivos com recursos limitados.\n Softwares que precisam processar muitos dados com alta performance.\n9. Conclusao\nC++ e uma linguagem importante porque combina eficiencia, flexibilidade e recursos\navancados de programacao. Ela pode ser mais complexa para iniciantes, mas oferece grande\npoder para criar sistemas robustos e de alto desempenho. Por isso, continua sendo muito\nvalorizada em areas onde velocidade, controle e confiabilidade sao fundamentais.",
+                    "similaridade": 0.33378222584724426
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:02:35.022295",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:03:24.239805",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:08:55.575414",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:09:12.636885",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": "prova"
+        },
+        "saida": [
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:09:49.897882",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "o que é ia?"
+        },
+        "saida": {
+            "resposta": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Entre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.6085211634635925
+                },
+                {
+                    "documento": "05_estrutura_dados_completo.pdf",
+                    "conteudo": "Estrutura de Dados e Algoritmos\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.",
+                    "similaridade": 0.48804500699043274
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.4211415648460388
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:10:15.469763",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me explica sobre neymar"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder sobre Neymar.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\nPágina 3 de 2\nResumo: Engenharia de Requisitos\nPágina 3 de 2",
+                    "similaridade": 0.2824426293373108
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.27355456352233887
+                },
+                {
+                    "documento": "02_seguranca_informacao_completo.pdf",
+                    "conteudo": "Segurança da Informação\nSegurança da informação é um dos assuntos mais importantes em concursos modernos. O conceito\ncentral envolve os pilares da confidencialidade, integridade e disponibilidade.\nA criptografia é amplamente cobrada. A criptografia simétrica utiliza uma única chave, enquanto a\nassimétrica utiliza chave pública e privada. Assinaturas digitais e certificados digitais também aparecem\nfrequentemente.\nOs concursos abordam diversos tipos de ataques cibernéticos, incluindo phishing, ransomware, malware,\nengenharia social e ataques DDoS. Conhecimentos sobre autenticação multifator e políticas de\nsegurança são diferenciais.\nA LGPD possui forte presença em concursos públicos brasileiros. Ela estabelece regras sobre tratamento\ne proteção de dados pessoais.\nSegurança da informação é um dos assuntos mais importantes em concursos modernos. O conceito\ncentral envolve os pilares da confidencialidade, integridade e disponibilidade.\nA criptografia é amplamente cobrada. A criptografia simétrica utiliza uma única chave, enquanto a\nassimétrica utiliza chave pública e privada. Assinaturas digitais e certificados digitais também aparecem\nfrequentemente.\nOs concursos abordam diversos tipos de ataques cibernéticos, incluindo phishing, ransomware, malware,\nengenharia social e ataques DDoS. Conhecimentos sobre autenticação multifator e políticas de\nsegurança são diferenciais.\nA LGPD possui forte presença em concursos públicos brasileiros. Ela estabelece regras sobre tratamento\ne proteção de dados pessoais.",
+                    "similaridade": 0.22916796803474426
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:11:00.544092",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": "prova"
+        },
+        "saida": [
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:11:55.796461",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob"
+        },
+        "saida": {
+            "id": 6,
+            "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:12:10.004060",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:12:29.699061",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:12:39.390818",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:13:08.805721",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "python é melhor que c++?"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder à pergunta sobre qual linguagem, Python ou C++, é melhor. Os materiais fornecidos descrevem as características, usos e vantagens/desafios da linguagem C++.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 1\n O que e a linguagem de programacao\n C++?\n Resumo introdutorio em 2 paginas sobre origem, caracteristicas, usos e conceitos\n principais.\n1. Visao geral\nC++ e uma linguagem de programacao de proposito geral, criada a partir da linguagem C.\nEla foi desenvolvida para permitir que o programador escreva programas eficientes, com\nbom controle sobre memoria e desempenho, mas tambem com recursos modernos de\norganizacao de codigo, como classes, objetos, templates e bibliotecas prontas.\nNa pratica, C++ e muito usada quando o sistema precisa ser rapido, controlar bem os\nrecursos do computador ou trabalhar proximo ao hardware. Por isso, aparece em jogos,\nsimuladores, sistemas embarcados, softwares de engenharia, navegadores, bancos de dados,\nsistemas operacionais e aplicacoes de alto desempenho.\n2. Origem e relacao com C\nA linguagem C++ surgiu como uma extensao da linguagem C. A ideia foi manter a eficiencia\ne a proximidade com o hardware, mas adicionar recursos de programacao orientada a\nobjetos. Por esse motivo, muitos codigos escritos em C podem ser entendidos ou adaptados\nem C++, embora C++ tenha evoluido bastante e hoje possua recursos proprios.\n3. Principais caracteristicas\n Alto desempenho: permite criar programas rapidos e eficientes.\n Controle de memoria: o programador pode gerenciar memoria diretamente quando necessario.\n Multiparadigma: suporta programacao procedural, orientada a objetos e generica.\n Portabilidade: um mesmo codigo pode ser compilado para diferentes sistemas, com ajustes\nquando preciso.\n Biblioteca padrao: possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.\n4. Exemplo simples de codigo\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Ola, mundo!\" << endl;\n    return 0;\n}\nNesse exemplo, o programa usa a biblioteca iostream para exibir uma mensagem na tela. A\nfuncao main e o ponto de entrada do programa, ou seja, o local onde a execucao comeca.",
+                    "similaridade": 0.46039092540740967
+                },
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 2\n Conceitos essenciais de C++\n Uma linguagem poderosa, mas que exige atencao com organizacao, memoria e tipos\n de dados.\n5. Programacao orientada a objetos\nUm dos pontos mais importantes de C++ e o suporte a programacao orientada a objetos.\nNesse modelo, o codigo e organizado em classes e objetos. Uma classe funciona como um\nmolde, definindo atributos e comportamentos. Um objeto e uma instancia dessa classe, ou\nseja, algo criado a partir desse molde.\nEsse estilo ajuda a organizar sistemas maiores, separando responsabilidades e facilitando a\nreutilizacao de codigo. Conceitos como encapsulamento, heranca e polimorfismo sao\nbastante usados em projetos escritos em C++.\n6. Compilacao\nC++ e uma linguagem compilada. Isso significa que o codigo-fonte escrito pelo programador\nprecisa passar por um compilador, que transforma o programa em um arquivo executavel.\nEsse processo geralmente deixa o programa final mais rapido, pois ele roda diretamente na\nmaquina depois de compilado.\n7. Vantagens e desafios\nVantagens\nDesafios\nExcelente desempenho e grande controle sobre\nrecursos do sistema.\nSintaxe mais detalhada e curva de aprendizado\nmaior.\nMuito usada em areas que exigem velocidade e\neficiencia.\nErros de memoria podem ocorrer se o codigo nao\nfor bem cuidado.\nPossui bibliotecas e ferramentas maduras.\nProjetos grandes exigem boa organizacao e\npadroes de codigo.\n8. Onde C++ e utilizado?\n Desenvolvimento de jogos e motores graficos.\n Sistemas operacionais, drivers e softwares proximos ao hardware.\n Aplicacoes cientificas, simuladores e programas de engenharia.\n Sistemas embarcados, robótica e dispositivos com recursos limitados.\n Softwares que precisam processar muitos dados com alta performance.\n9. Conclusao\nC++ e uma linguagem importante porque combina eficiencia, flexibilidade e recursos\navancados de programacao. Ela pode ser mais complexa para iniciantes, mas oferece grande\npoder para criar sistemas robustos e de alto desempenho. Por isso, continua sendo muito\nvalorizada em areas onde velocidade, controle e confiabilidade sao fundamentais.",
+                    "similaridade": 0.3776039481163025
+                },
+                {
+                    "documento": "01_redes_computadores_completo.pdf",
+                    "conteudo": "Redes de Computadores\nRedes de computadores são fundamentais para a comunicação entre dispositivos e sistemas modernos.\nOs concursos públicos frequentemente cobram o modelo OSI e TCP/IP, exigindo conhecimento sobre as\nfunções de cada camada. A camada física trata da transmissão de bits, enquanto as camadas superiores\nlidam com roteamento, transporte e aplicação.\nO protocolo TCP garante confiabilidade na transmissão dos dados através de confirmação de\nrecebimento e controle de fluxo. Já o UDP é mais rápido, porém não garante entrega, sendo muito\nutilizado em aplicações multimídia e jogos online.\nOutro tema extremamente cobrado é o endereçamento IP. O candidato deve compreender IPv4, IPv6,\nmáscara de sub-rede, CIDR, gateway padrão e DNS. Questões de subnetting costumam aparecer em\nprovas técnicas.\nAlém disso, protocolos como HTTP, HTTPS, FTP, SSH, SMTP e DHCP são recorrentes em concursos. A\nsegurança em redes também é importante, incluindo firewalls, VLANs, VPNs, IDS e IPS.\nRedes de computadores são fundamentais para a comunicação entre dispositivos e sistemas modernos.\nOs concursos públicos frequentemente cobram o modelo OSI e TCP/IP, exigindo conhecimento sobre as\nfunções de cada camada. A camada física trata da transmissão de bits, enquanto as camadas superiores\nlidam com roteamento, transporte e aplicação.\nO protocolo TCP garante confiabilidade na transmissão dos dados através de confirmação de\nrecebimento e controle de fluxo. Já o UDP é mais rápido, porém não garante entrega, sendo muito\nutilizado em aplicações multimídia e jogos online.\nOutro tema extremamente cobrado é o endereçamento IP. O candidato deve compreender IPv4, IPv6,\nmáscara de sub-rede, CIDR, gateway padrão e DNS. Questões de subnetting costumam aparecer em\nprovas técnicas.\nAlém disso, protocolos como HTTP, HTTPS, FTP, SSH, SMTP e DHCP são recorrentes em concursos. A\nsegurança em redes também é importante, incluindo firewalls, VLANs, VPNs, IDS e IPS.",
+                    "similaridade": 0.2963814437389374
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:13:51.468180",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "cite as carecteristicas da linguagem C++"
+        },
+        "saida": {
+            "resposta": "As principais características da linguagem C++ são:\n\n*   **Alto desempenho:** permite criar programas rápidos e eficientes.\n*   **Controle de memória:** o programador pode gerenciar memória diretamente quando necessário.\n*   **Multiparadigma:** suporta programação procedural, orientada a objetos e genérica.\n*   **Portabilidade:** um mesmo código pode ser compilado para diferentes sistemas, com ajustes quando preciso.\n*   **Biblioteca padrão:** possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 1\n O que e a linguagem de programacao\n C++?\n Resumo introdutorio em 2 paginas sobre origem, caracteristicas, usos e conceitos\n principais.\n1. Visao geral\nC++ e uma linguagem de programacao de proposito geral, criada a partir da linguagem C.\nEla foi desenvolvida para permitir que o programador escreva programas eficientes, com\nbom controle sobre memoria e desempenho, mas tambem com recursos modernos de\norganizacao de codigo, como classes, objetos, templates e bibliotecas prontas.\nNa pratica, C++ e muito usada quando o sistema precisa ser rapido, controlar bem os\nrecursos do computador ou trabalhar proximo ao hardware. Por isso, aparece em jogos,\nsimuladores, sistemas embarcados, softwares de engenharia, navegadores, bancos de dados,\nsistemas operacionais e aplicacoes de alto desempenho.\n2. Origem e relacao com C\nA linguagem C++ surgiu como uma extensao da linguagem C. A ideia foi manter a eficiencia\ne a proximidade com o hardware, mas adicionar recursos de programacao orientada a\nobjetos. Por esse motivo, muitos codigos escritos em C podem ser entendidos ou adaptados\nem C++, embora C++ tenha evoluido bastante e hoje possua recursos proprios.\n3. Principais caracteristicas\n Alto desempenho: permite criar programas rapidos e eficientes.\n Controle de memoria: o programador pode gerenciar memoria diretamente quando necessario.\n Multiparadigma: suporta programacao procedural, orientada a objetos e generica.\n Portabilidade: um mesmo codigo pode ser compilado para diferentes sistemas, com ajustes\nquando preciso.\n Biblioteca padrao: possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.\n4. Exemplo simples de codigo\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Ola, mundo!\" << endl;\n    return 0;\n}\nNesse exemplo, o programa usa a biblioteca iostream para exibir uma mensagem na tela. A\nfuncao main e o ponto de entrada do programa, ou seja, o local onde a execucao comeca.",
+                    "similaridade": 0.5708565711975098
+                },
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 2\n Conceitos essenciais de C++\n Uma linguagem poderosa, mas que exige atencao com organizacao, memoria e tipos\n de dados.\n5. Programacao orientada a objetos\nUm dos pontos mais importantes de C++ e o suporte a programacao orientada a objetos.\nNesse modelo, o codigo e organizado em classes e objetos. Uma classe funciona como um\nmolde, definindo atributos e comportamentos. Um objeto e uma instancia dessa classe, ou\nseja, algo criado a partir desse molde.\nEsse estilo ajuda a organizar sistemas maiores, separando responsabilidades e facilitando a\nreutilizacao de codigo. Conceitos como encapsulamento, heranca e polimorfismo sao\nbastante usados em projetos escritos em C++.\n6. Compilacao\nC++ e uma linguagem compilada. Isso significa que o codigo-fonte escrito pelo programador\nprecisa passar por um compilador, que transforma o programa em um arquivo executavel.\nEsse processo geralmente deixa o programa final mais rapido, pois ele roda diretamente na\nmaquina depois de compilado.\n7. Vantagens e desafios\nVantagens\nDesafios\nExcelente desempenho e grande controle sobre\nrecursos do sistema.\nSintaxe mais detalhada e curva de aprendizado\nmaior.\nMuito usada em areas que exigem velocidade e\neficiencia.\nErros de memoria podem ocorrer se o codigo nao\nfor bem cuidado.\nPossui bibliotecas e ferramentas maduras.\nProjetos grandes exigem boa organizacao e\npadroes de codigo.\n8. Onde C++ e utilizado?\n Desenvolvimento de jogos e motores graficos.\n Sistemas operacionais, drivers e softwares proximos ao hardware.\n Aplicacoes cientificas, simuladores e programas de engenharia.\n Sistemas embarcados, robótica e dispositivos com recursos limitados.\n Softwares que precisam processar muitos dados com alta performance.\n9. Conclusao\nC++ e uma linguagem importante porque combina eficiencia, flexibilidade e recursos\navancados de programacao. Ela pode ser mais complexa para iniciantes, mas oferece grande\npoder para criar sistemas robustos e de alto desempenho. Por isso, continua sendo muito\nvalorizada em areas onde velocidade, controle e confiabilidade sao fundamentais.",
+                    "similaridade": 0.4919259250164032
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.4744586646556854
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:28:00.410289",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me fale sobre star wars"
+        },
+        "saida": {
+            "resposta": "Star Wars é uma franquia de filmes muito famosa, conhecida pelo mundo inteiro. A saga inteira tem 10 filmes. O último filme chama O imperio contra ataca e foi lançado em 2019. O dono da franquia é a Disney.",
+            "chunks_usados": [
+                {
+                    "documento": "baboseira.txt",
+                    "conteudo": "Star Wars é uma franquia de filmes muito famosa\nMuita gente no mundo gosta de Star Wars, a saga inteira tem 10 filmes.\nO último filme chama O imperio contra ataca e foi lançado em 2019.\nO dono da franquia é a Disney.\nConhecido pelo mundo inteiro.",
+                    "similaridade": 0.5144040584564209
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.21935299038887024
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\nPágina 3 de 2\nResumo: Engenharia de Requisitos\nPágina 3 de 2",
+                    "similaridade": 0.1969740241765976
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:28:34.159488",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "qual o ano de lançamento do ultimo filme de star wars?"
+        },
+        "saida": {
+            "resposta": "O último filme chama O imperio contra ataca e foi lançado em 2019.",
+            "chunks_usados": [
+                {
+                    "documento": "baboseira.txt",
+                    "conteudo": "Star Wars é uma franquia de filmes muito famosa\nMuita gente no mundo gosta de Star Wars, a saga inteira tem 10 filmes.\nO último filme chama O imperio contra ataca e foi lançado em 2019.\nO dono da franquia é a Disney.\nConhecido pelo mundo inteiro.",
+                    "similaridade": 0.6586344242095947
+                },
+                {
+                    "documento": "01_redes_computadores_completo.pdf",
+                    "conteudo": "Redes de Computadores\nRedes de computadores são fundamentais para a comunicação entre dispositivos e sistemas modernos.\nOs concursos públicos frequentemente cobram o modelo OSI e TCP/IP, exigindo conhecimento sobre as\nfunções de cada camada. A camada física trata da transmissão de bits, enquanto as camadas superiores\nlidam com roteamento, transporte e aplicação.\nO protocolo TCP garante confiabilidade na transmissão dos dados através de confirmação de\nrecebimento e controle de fluxo. Já o UDP é mais rápido, porém não garante entrega, sendo muito\nutilizado em aplicações multimídia e jogos online.\nOutro tema extremamente cobrado é o endereçamento IP. O candidato deve compreender IPv4, IPv6,\nmáscara de sub-rede, CIDR, gateway padrão e DNS. Questões de subnetting costumam aparecer em\nprovas técnicas.\nAlém disso, protocolos como HTTP, HTTPS, FTP, SSH, SMTP e DHCP são recorrentes em concursos. A\nsegurança em redes também é importante, incluindo firewalls, VLANs, VPNs, IDS e IPS.\nRedes de computadores são fundamentais para a comunicação entre dispositivos e sistemas modernos.\nOs concursos públicos frequentemente cobram o modelo OSI e TCP/IP, exigindo conhecimento sobre as\nfunções de cada camada. A camada física trata da transmissão de bits, enquanto as camadas superiores\nlidam com roteamento, transporte e aplicação.\nO protocolo TCP garante confiabilidade na transmissão dos dados através de confirmação de\nrecebimento e controle de fluxo. Já o UDP é mais rápido, porém não garante entrega, sendo muito\nutilizado em aplicações multimídia e jogos online.\nOutro tema extremamente cobrado é o endereçamento IP. O candidato deve compreender IPv4, IPv6,\nmáscara de sub-rede, CIDR, gateway padrão e DNS. Questões de subnetting costumam aparecer em\nprovas técnicas.\nAlém disso, protocolos como HTTP, HTTPS, FTP, SSH, SMTP e DHCP são recorrentes em concursos. A\nsegurança em redes também é importante, incluindo firewalls, VLANs, VPNs, IDS e IPS.",
+                    "similaridade": 0.365003764629364
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.3482738733291626
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:29:07.146149",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "o que é baboseira?"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder à sua pergunta.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.4697609543800354
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos -\n continuação\nTécnicas de levantamento\nExistem várias formas de descobrir requisitos. A escolha depende do contexto do projeto, do tipo\nde usuário e do tempo disponível.\n Entrevistas com usuários e responsáveis pelo sistema.\n Questionários para coletar respostas de um grupo maior.\n Observação do uso real de um processo ou sistema existente.\n Análise de documentos, formulários e regras já utilizadas.\n Protótipos para validar ideias antes da implementação completa.\nCaracterísticas de um bom requisito\n Clareza: deve ser fácil de entender.\n Completude: deve trazer informações suficientes.\n Consistência: não deve contradizer outros requisitos.\n Verificabilidade: deve ser possível testar se foi atendido.\n Rastreabilidade: deve ser possível acompanhar sua origem e mudanças.\nExemplo simples\nRequisito funcional: “O sistema deve permitir que o aluno visualize suas notas por disciplina.”\nRequisito não funcional relacionado: “A tela de notas deve carregar em até 3 segundos em\ncondições normais de uso.”\nImportância no projeto\nA engenharia de requisitos aproxima a equipe técnica dos usuários. Ela ajuda a evitar que o\nsistema seja desenvolvido com base em suposições e aumenta a chance de entregar uma solução\nrealmente útil.\nResumo final: engenharia de requisitos é a base para construir sistemas alinhados às necessidades dos\nusuários, reduzindo erros, retrabalho e problemas de comunicação.\nResumo: Engenharia de Requisitos\nPágina 2 de 2",
+                    "similaridade": 0.44455885887145996
+                },
+                {
+                    "documento": "03_banco_dados_completo.pdf",
+                    "conteudo": "Banco de Dados\nBanco de dados é um tema essencial para a área de TI. Os sistemas gerenciadores de banco de dados\narmazenam e organizam informações de forma estruturada.\nO modelo relacional utiliza tabelas compostas por linhas e colunas. As chaves primárias identificam\nregistros únicos, enquanto as chaves estrangeiras estabelecem relacionamentos.\nSQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT,\nINSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.\nOutro assunto importante é normalização. As formas normais ajudam a reduzir redundância e\ninconsistências. Também é fundamental estudar transações e propriedades ACID.\nBanco de dados é um tema essencial para a área de TI. Os sistemas gerenciadores de banco de dados\narmazenam e organizam informações de forma estruturada.\nO modelo relacional utiliza tabelas compostas por linhas e colunas. As chaves primárias identificam\nregistros únicos, enquanto as chaves estrangeiras estabelecem relacionamentos.\nSQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT,\nINSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.\nOutro assunto importante é normalização. As formas normais ajudam a reduzir redundância e\ninconsistências. Também é fundamental estudar transações e propriedades ACID.",
+                    "similaridade": 0.41988512873649597
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:29:20.023378",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "quem é neymar?"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder à pergunta sobre quem é Neymar.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.2926618158817291
+                },
+                {
+                    "documento": "resumo_engenharia_requisitos.pdf",
+                    "conteudo": "Resumo: Engenharia de Requisitos\nPágina 3 de 2\nResumo: Engenharia de Requisitos\nPágina 3 de 2",
+                    "similaridade": 0.28809744119644165
+                },
+                {
+                    "documento": "baboseira.txt",
+                    "conteudo": "Star Wars é uma franquia de filmes muito famosa\nMuita gente no mundo gosta de Star Wars, a saga inteira tem 10 filmes.\nO último filme chama O imperio contra ataca e foi lançado em 2019.\nO dono da franquia é a Disney.\nConhecido pelo mundo inteiro.",
+                    "similaridade": 0.25565004348754883
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:30:52.868195",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "vc consegue fornecer codigos em python?"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder à sua pergunta. Os trechos fornecidos descrevem a linguagem C++ e conceitos relacionados à inteligência artificial, mas não incluem exemplos de código em Python.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 2\n Conceitos essenciais de C++\n Uma linguagem poderosa, mas que exige atencao com organizacao, memoria e tipos\n de dados.\n5. Programacao orientada a objetos\nUm dos pontos mais importantes de C++ e o suporte a programacao orientada a objetos.\nNesse modelo, o codigo e organizado em classes e objetos. Uma classe funciona como um\nmolde, definindo atributos e comportamentos. Um objeto e uma instancia dessa classe, ou\nseja, algo criado a partir desse molde.\nEsse estilo ajuda a organizar sistemas maiores, separando responsabilidades e facilitando a\nreutilizacao de codigo. Conceitos como encapsulamento, heranca e polimorfismo sao\nbastante usados em projetos escritos em C++.\n6. Compilacao\nC++ e uma linguagem compilada. Isso significa que o codigo-fonte escrito pelo programador\nprecisa passar por um compilador, que transforma o programa em um arquivo executavel.\nEsse processo geralmente deixa o programa final mais rapido, pois ele roda diretamente na\nmaquina depois de compilado.\n7. Vantagens e desafios\nVantagens\nDesafios\nExcelente desempenho e grande controle sobre\nrecursos do sistema.\nSintaxe mais detalhada e curva de aprendizado\nmaior.\nMuito usada em areas que exigem velocidade e\neficiencia.\nErros de memoria podem ocorrer se o codigo nao\nfor bem cuidado.\nPossui bibliotecas e ferramentas maduras.\nProjetos grandes exigem boa organizacao e\npadroes de codigo.\n8. Onde C++ e utilizado?\n Desenvolvimento de jogos e motores graficos.\n Sistemas operacionais, drivers e softwares proximos ao hardware.\n Aplicacoes cientificas, simuladores e programas de engenharia.\n Sistemas embarcados, robótica e dispositivos com recursos limitados.\n Softwares que precisam processar muitos dados com alta performance.\n9. Conclusao\nC++ e uma linguagem importante porque combina eficiencia, flexibilidade e recursos\navancados de programacao. Ela pode ser mais complexa para iniciantes, mas oferece grande\npoder para criar sistemas robustos e de alto desempenho. Por isso, continua sendo muito\nvalorizada em areas onde velocidade, controle e confiabilidade sao fundamentais.",
+                    "similaridade": 0.4098096489906311
+                },
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 1\n O que e a linguagem de programacao\n C++?\n Resumo introdutorio em 2 paginas sobre origem, caracteristicas, usos e conceitos\n principais.\n1. Visao geral\nC++ e uma linguagem de programacao de proposito geral, criada a partir da linguagem C.\nEla foi desenvolvida para permitir que o programador escreva programas eficientes, com\nbom controle sobre memoria e desempenho, mas tambem com recursos modernos de\norganizacao de codigo, como classes, objetos, templates e bibliotecas prontas.\nNa pratica, C++ e muito usada quando o sistema precisa ser rapido, controlar bem os\nrecursos do computador ou trabalhar proximo ao hardware. Por isso, aparece em jogos,\nsimuladores, sistemas embarcados, softwares de engenharia, navegadores, bancos de dados,\nsistemas operacionais e aplicacoes de alto desempenho.\n2. Origem e relacao com C\nA linguagem C++ surgiu como uma extensao da linguagem C. A ideia foi manter a eficiencia\ne a proximidade com o hardware, mas adicionar recursos de programacao orientada a\nobjetos. Por esse motivo, muitos codigos escritos em C podem ser entendidos ou adaptados\nem C++, embora C++ tenha evoluido bastante e hoje possua recursos proprios.\n3. Principais caracteristicas\n Alto desempenho: permite criar programas rapidos e eficientes.\n Controle de memoria: o programador pode gerenciar memoria diretamente quando necessario.\n Multiparadigma: suporta programacao procedural, orientada a objetos e generica.\n Portabilidade: um mesmo codigo pode ser compilado para diferentes sistemas, com ajustes\nquando preciso.\n Biblioteca padrao: possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.\n4. Exemplo simples de codigo\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Ola, mundo!\" << endl;\n    return 0;\n}\nNesse exemplo, o programa usa a biblioteca iostream para exibir uma mensagem na tela. A\nfuncao main e o ponto de entrada do programa, ou seja, o local onde a execucao comeca.",
+                    "similaridade": 0.3724386394023895
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.3663385510444641
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:37:51.235860",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:38:03.978512",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:38:20.334162",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:38:36.958351",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:39:07.984321",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:41:13.203587",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:42:49.978430",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "mexer no código do jarvis"
+        },
+        "saida": {
+            "id": 7,
+            "descricao": "mexer no código do jarvis",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:43:17.715036",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "Fazer a correção do front end"
+        },
+        "saida": {
+            "id": 8,
+            "descricao": "Fazer a correção do front end",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:44:54.126185",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "mexer no codigo fonte da função decidir_resposta"
+        },
+        "saida": {
+            "id": 9,
+            "descricao": "mexer no codigo fonte da função decidir_resposta",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:45:21.960016",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": true
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": true
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": true
+            },
+            {
+                "id": 6,
+                "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
+                "concluida": false
+            },
+            {
+                "id": 7,
+                "descricao": "mexer no código do jarvis",
+                "concluida": false
+            },
+            {
+                "id": 8,
+                "descricao": "Fazer a correção do front end",
+                "concluida": false
+            },
+            {
+                "id": 9,
+                "descricao": "mexer no codigo fonte da função decidir_resposta",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T17:45:51.769543",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "Mexer na lógica do tool calling"
+        },
+        "saida": {
+            "id": 10,
+            "descricao": "Mexer na lógica do tool calling",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-25T17:46:46.954160",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": "10"
+        },
+        "saida": {
+            "id": 10,
+            "descricao": "Mexer na lógica do tool calling",
+            "concluida": true
+        }
     }
 ]

@@ -74,6 +74,23 @@ Use para perguntas como:
 Parâmetro necessário:
 - pergunta: deve ser a pergunta original do usuário
 
+7. resposta_geral
+Use quando o usuário fizer uma saudação, agradecimento, pergunta geral ou uma continuação da conversa que não exija necessariamente agenda, tarefas ou materiais.
+Use para mensagens como:
+- "olá"
+- "tudo bem?"
+- "obrigado"
+- "muito obrigado"
+- "somente isso?"
+- "o que você faz?"
+- "me ajude"
+
+Não use resposta_geral para responder perguntas de conhecimento geral.
+Se o usuário perguntar sobre qualquer conteúdo, conceito, pessoa, filme, tecnologia, história, ciência ou assunto externo, use ferramenta_buscar_material_rag.
+
+Parâmetro necessário:
+- pergunta: mensagem original do usuário
+
 Regras importantes:
 
 - Responda apenas em JSON, sem explicações.
@@ -84,6 +101,9 @@ Regras importantes:
 - Para perguntas sobre materiais de estudo, use ferramenta_buscar_material_rag.
 - Para perguntas sobre tarefas, use uma das ferramentas de tarefas.
 - Para perguntas sobre agenda, use uma das ferramentas de agenda.
+- Se a pergunta for apenas saudação, agradecimento ou conversa geral, use resposta_geral.
+- Se o usuário disser "essa", "ela", "essa tarefa" ou "essa também", use o histórico da conversa para tentar entender a referência.
+- Se não conseguir identificar uma tarefa específica, use resposta_geral em vez de inventar um ID.
 
 Exemplo para agenda:
 {{
@@ -105,6 +125,14 @@ Exemplo para RAG:
     "ferramenta": "ferramenta_buscar_material_rag",
     "parametros": {{
         "pergunta": "Explique embeddings"
+    }}
+}}
+
+Exemplo para resposta geral:
+{{ 
+    "ferramenta": "resposta_geral",
+    "parametros": {{ 
+        "pergunta": "muito obrigado"
     }}
 }}
 
@@ -152,7 +180,12 @@ Regras:
 - Se uma tarefa foi concluída, confirme de forma natural.
 - Se for uma resposta de material de estudo, responda com base no conteúdo retornado.
 - Responda em português do Brasil.
-
+- Você NÃO deve responder usando conhecimento geral próprio.
+- Você só pode responder com base no resultado da ferramenta executada.
+- Se o usuário perguntar sobre algo que não esteja nos materiais de estudo, agenda ou tarefas, diga que não encontrou essa informação nos materiais disponíveis.
+- Não diga que foi treinado com livros, sites ou textos externos.
+- Não mencione base de treinamento.
+- Para perguntas gerais como "olá", "obrigado" ou "o que você pode fazer?", responda normalmente e de forma natural.
 Resposta final:
 """
 
