@@ -1,0 +1,4 @@
+Lista de ferramentas de IA utilizadas para auxílio no projeto:
+- ChatGPT
+- Gemini
+- Claude Code

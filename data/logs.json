@@ -1,0 +1,850 @@
+[
+    {
+        "data_hora": "2026-05-24T20:00:21.872831",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": false
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": false
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T20:06:17.822824",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "Estudar para a prova de IHC."
+        },
+        "saida": {
+            "id": 4,
+            "descricao": "Estudar para a prova de IHC.",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-24T21:03:18.975569",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": false
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": false
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T21:08:05.970305",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            },
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T21:09:04.840976",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": "prova"
+        },
+        "saida": [
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T21:09:45.268323",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "dia 25",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T21:10:27.898552",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "próxima quarta",
+            "tipo": "aula"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T21:12:28.211928",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "Estudar RAG para a disciplina de IA"
+        },
+        "saida": {
+            "id": 5,
+            "descricao": "Estudar RAG para a disciplina de IA",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-24T21:13:21.677133",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": "5"
+        },
+        "saida": null
+    },
+    {
+        "data_hora": "2026-05-24T21:17:48.467627",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": "4"
+        },
+        "saida": null
+    },
+    {
+        "data_hora": "2026-05-24T21:18:43.759216",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": "4"
+        },
+        "saida": null
+    },
+    {
+        "data_hora": "2026-05-24T21:23:17.913567",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": 5
+        },
+        "saida": {
+            "id": 5,
+            "descricao": "Estudar RAG para a disciplina de IA",
+            "concluida": true
+        }
+    },
+    {
+        "data_hora": "2026-05-24T21:26:48.932357",
+        "ferramenta": "ferramenta_adicionar_tarefa",
+        "entrada": {
+            "descricao": "revisar o conteúdo de embeddings"
+        },
+        "saida": {
+            "id": 5,
+            "descricao": "revisar o conteúdo de embeddings",
+            "concluida": false
+        }
+    },
+    {
+        "data_hora": "2026-05-24T21:27:21.921345",
+        "ferramenta": "ferramenta_listar_tarefas",
+        "entrada": {},
+        "saida": [
+            {
+                "id": 1,
+                "descricao": "Estudar RAG para a prova de IA.",
+                "concluida": false
+            },
+            {
+                "id": 2,
+                "descricao": "Estudar KNN para a prova de IA.",
+                "concluida": false
+            },
+            {
+                "id": 3,
+                "descricao": "Estudar para o trabalho de IA.",
+                "concluida": true
+            },
+            {
+                "id": 4,
+                "descricao": "Estudar para a prova de IHC.",
+                "concluida": false
+            },
+            {
+                "id": 5,
+                "descricao": "revisar o conteúdo de embeddings",
+                "concluida": false
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T22:52:50.248392",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "oq são embeddings?"
+        },
+        "saida": {
+            "resposta": "Embeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.5631954669952393
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.447024405002594
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.3128893971443176
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T22:53:38.404711",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "explique rag pf"
+        },
+        "saida": {
+            "resposta": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.22162595391273499
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.056134797632694244
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.027439650148153305
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T22:54:29.720678",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "quem é o neymar"
+        },
+        "saida": {
+            "resposta": "Não encontrei informação suficiente nos materiais para responder à sua pergunta.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.3289908170700073
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.261191725730896
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.23814672231674194
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:06:14.280579",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "explique embeddings"
+        },
+        "saida": {
+            "resposta": "Embeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.3487432599067688
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.13592199981212616
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.10553043335676193
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:07:11.352699",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "Resuma o conteúdo de RAG"
+        },
+        "saida": {
+            "resposta": "RAG, ou Retrieval-Augmented Generation, combina recuperação de informações com geração de texto. O sistema busca trechos relevantes em uma base de documentos e, em seguida, a LLM usa esses trechos para gerar uma resposta mais fundamentada.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.515687108039856
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.2553923726081848
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.24015909433364868
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:09:55.148551",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "amanha",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:11:14.699307",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "oq é ia?"
+        },
+        "saida": {
+            "resposta": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.6085211634635925
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.4211415648460388
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.3185884952545166
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:13:34.769752",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:13:45.670128",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "O que o material fala sobre inteligência artificial?"
+        },
+        "saida": {
+            "resposta": "De acordo com o material, Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana. Entre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Inteligência Artificial é uma área da Ciência da Computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana.\n\nEntre essas tarefas estão o reconhecimento de padrões, a tomada de decisão, o processamento de linguagem natural, a visão computacional e o aprendizado a partir de dados.",
+                    "similaridade": 0.578416645526886
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.41413062810897827
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras é considerado o pior time do Brasil. O Palmeiras atualmente tem 0 títulos mundiais.",
+                    "similaridade": 0.3824687600135803
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:14:04.442924",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": 5
+        },
+        "saida": {
+            "id": 5,
+            "descricao": "revisar o conteúdo de embeddings",
+            "concluida": true
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:27:45.412512",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "o que é a linguagem C++"
+        },
+        "saida": {
+            "resposta": "C++ é uma linguagem de programação de propósito geral, criada a partir da linguagem C. Ela foi desenvolvida para permitir que o programador escreva programas eficientes, com bom controle sobre memória e desempenho, mas também com recursos modernos de organização de código, como classes, objetos, templates e bibliotecas prontas. É muito usada quando o sistema precisa ser rápido, controlar bem os recursos do computador ou trabalhar próximo ao hardware.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 1\n O que e a linguagem de programacao\n C++?\n Resumo introdutorio em 2 paginas sobre origem, caracteristicas, usos e conceitos\n principais.\n1. Visao geral\nC++ e uma linguagem de programacao de proposito geral, criada a partir da linguagem C.\nEla foi desenvolvida para permitir que o programador escreva programas eficientes, com\nbom controle sobre memoria e desempenho, mas tambem com recursos modernos de\norganizacao de codigo, como classes, objetos, templates e bibliotecas prontas.\nNa pratica, C++ e muito usada quando o sistema precisa ser rapido, controlar bem os\nrecursos do computador ou trabalhar proximo ao hardware. Por isso, aparece em jogos,\nsimuladores, sistemas embarcados, softwares de engenharia, navegadores, bancos de dados,\nsistemas operacionais e aplicacoes de alto desempenho.\n2. Origem e relacao com C\nA linguagem C++ surgiu como uma extensao da linguagem C. A ideia foi manter a eficiencia\ne a proximidade com o hardware, mas adicionar recursos de programacao orientada a\nobjetos. Por esse motivo, muitos codigos escritos em C podem ser entendidos ou adaptados\nem C++, embora C++ tenha evoluido bastante e hoje possua recursos proprios.\n3. Principais caracteristicas\n Alto desempenho: permite criar programas rapidos e eficientes.\n Controle de memoria: o programador pode gerenciar memoria diretamente quando necessario.\n Multiparadigma: suporta programacao procedural, orientada a objetos e generica.\n Portabilidade: um mesmo codigo pode ser compilado para diferentes sistemas, com ajustes\nquando preciso.\n Biblioteca padrao: possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.\n4. Exemplo simples de codigo\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Ola, mundo!\" << endl;\n    return 0;\n}\nNesse exemplo, o programa usa a biblioteca iostream para exibir uma mensagem na tela. A\nfuncao main e o ponto de entrada do programa, ou seja, o local onde a execucao comeca.",
+                    "similaridade": 0.6206606030464172
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.5307133197784424
+                },
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 2\n Conceitos essenciais de C++\n Uma linguagem poderosa, mas que exige atencao com organizacao, memoria e tipos\n de dados.\n5. Programacao orientada a objetos\nUm dos pontos mais importantes de C++ e o suporte a programacao orientada a objetos.\nNesse modelo, o codigo e organizado em classes e objetos. Uma classe funciona como um\nmolde, definindo atributos e comportamentos. Um objeto e uma instancia dessa classe, ou\nseja, algo criado a partir desse molde.\nEsse estilo ajuda a organizar sistemas maiores, separando responsabilidades e facilitando a\nreutilizacao de codigo. Conceitos como encapsulamento, heranca e polimorfismo sao\nbastante usados em projetos escritos em C++.\n6. Compilacao\nC++ e uma linguagem compilada. Isso significa que o codigo-fonte escrito pelo programador\nprecisa passar por um compilador, que transforma o programa em um arquivo executavel.\nEsse processo geralmente deixa o programa final mais rapido, pois ele roda diretamente na\nmaquina depois de compilado.\n7. Vantagens e desafios\nVantagens\nDesafios\nExcelente desempenho e grande controle sobre\nrecursos do sistema.\nSintaxe mais detalhada e curva de aprendizado\nmaior.\nMuito usada em areas que exigem velocidade e\neficiencia.\nErros de memoria podem ocorrer se o codigo nao\nfor bem cuidado.\nPossui bibliotecas e ferramentas maduras.\nProjetos grandes exigem boa organizacao e\npadroes de codigo.\n8. Onde C++ e utilizado?\n Desenvolvimento de jogos e motores graficos.\n Sistemas operacionais, drivers e softwares proximos ao hardware.\n Aplicacoes cientificas, simuladores e programas de engenharia.\n Sistemas embarcados, robótica e dispositivos com recursos limitados.\n Softwares que precisam processar muitos dados com alta performance.\n9. Conclusao\nC++ e uma linguagem importante porque combina eficiencia, flexibilidade e recursos\navancados de programacao. Ela pode ser mais complexa para iniciantes, mas oferece grande\npoder para criar sistemas robustos e de alto desempenho. Por isso, continua sendo muito\nvalorizada em areas onde velocidade, controle e confiabilidade sao fundamentais.",
+                    "similaridade": 0.5271972417831421
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:32:45.376634",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me fala sobre SQL"
+        },
+        "saida": {
+            "resposta": "SQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.",
+            "chunks_usados": [
+                {
+                    "documento": "03_banco_dados_completo.pdf",
+                    "conteudo": "Banco de Dados\nBanco de dados é um tema essencial para a área de TI. Os sistemas gerenciadores de banco de dados\narmazenam e organizam informações de forma estruturada.\nO modelo relacional utiliza tabelas compostas por linhas e colunas. As chaves primárias identificam\nregistros únicos, enquanto as chaves estrangeiras estabelecem relacionamentos.\nSQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT,\nINSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.\nOutro assunto importante é normalização. As formas normais ajudam a reduzir redundância e\ninconsistências. Também é fundamental estudar transações e propriedades ACID.\nBanco de dados é um tema essencial para a área de TI. Os sistemas gerenciadores de banco de dados\narmazenam e organizam informações de forma estruturada.\nO modelo relacional utiliza tabelas compostas por linhas e colunas. As chaves primárias identificam\nregistros únicos, enquanto as chaves estrangeiras estabelecem relacionamentos.\nSQL é extremamente cobrado em concursos. Os candidatos devem dominar comandos SELECT,\nINSERT, UPDATE, DELETE, JOIN, GROUP BY, HAVING e subqueries.\nOutro assunto importante é normalização. As formas normais ajudam a reduzir redundância e\ninconsistências. Também é fundamental estudar transações e propriedades ACID.",
+                    "similaridade": 0.43361896276474
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.34877389669418335
+                },
+                {
+                    "documento": "05_estrutura_dados_completo.pdf",
+                    "conteudo": "Estrutura de Dados e Algoritmos\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.",
+                    "similaridade": 0.3123484253883362
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:33:10.848834",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me fale sobre redes e segurança da informação"
+        },
+        "saida": {
+            "resposta": "Segurança da informação é um dos assuntos mais importantes em concursos modernos. O conceito central envolve os pilares da confidencialidade, integridade e disponibilidade. A criptografia é amplamente cobrada. A criptografia simétrica utiliza uma única chave, enquanto a assimétrica utiliza chave pública e privada. Assinaturas digitais e certificados digitais também aparecem frequentemente. Os concursos abordam diversos tipos de ataques cibernéticos, incluindo phishing, ransomware, malware, engenharia social e ataques DDoS. Conhecimentos sobre autenticação multifator e políticas de segurança são diferenciais. A LGPD possui forte presença em concursos públicos brasileiros. Ela estabelece regras sobre tratamento e proteção de dados pessoais.",
+            "chunks_usados": [
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "RAG, ou Retrieval-Augmented Generation, é uma técnica que combina recuperação de informações com geração de texto. Primeiro, o sistema busca trechos relevantes em uma base de documentos. Depois, a LLM usa esses trechos para gerar uma resposta mais fundamentada.\n\nO Palmeiras atualmente tem 0 títulos mundiais. O Flamengo é o maior time do Brasil, 4 vezes campeão da Libertadores e 1 vez campeão mundial.",
+                    "similaridade": 0.5401417016983032
+                },
+                {
+                    "documento": "02_seguranca_informacao_completo.pdf",
+                    "conteudo": "Segurança da Informação\nSegurança da informação é um dos assuntos mais importantes em concursos modernos. O conceito\ncentral envolve os pilares da confidencialidade, integridade e disponibilidade.\nA criptografia é amplamente cobrada. A criptografia simétrica utiliza uma única chave, enquanto a\nassimétrica utiliza chave pública e privada. Assinaturas digitais e certificados digitais também aparecem\nfrequentemente.\nOs concursos abordam diversos tipos de ataques cibernéticos, incluindo phishing, ransomware, malware,\nengenharia social e ataques DDoS. Conhecimentos sobre autenticação multifator e políticas de\nsegurança são diferenciais.\nA LGPD possui forte presença em concursos públicos brasileiros. Ela estabelece regras sobre tratamento\ne proteção de dados pessoais.\nSegurança da informação é um dos assuntos mais importantes em concursos modernos. O conceito\ncentral envolve os pilares da confidencialidade, integridade e disponibilidade.\nA criptografia é amplamente cobrada. A criptografia simétrica utiliza uma única chave, enquanto a\nassimétrica utiliza chave pública e privada. Assinaturas digitais e certificados digitais também aparecem\nfrequentemente.\nOs concursos abordam diversos tipos de ataques cibernéticos, incluindo phishing, ransomware, malware,\nengenharia social e ataques DDoS. Conhecimentos sobre autenticação multifator e políticas de\nsegurança são diferenciais.\nA LGPD possui forte presença em concursos públicos brasileiros. Ela estabelece regras sobre tratamento\ne proteção de dados pessoais.",
+                    "similaridade": 0.5363225936889648
+                },
+                {
+                    "documento": "05_estrutura_dados_completo.pdf",
+                    "conteudo": "Estrutura de Dados e Algoritmos\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.\nEstruturas de dados organizam informações para melhorar eficiência e desempenho dos sistemas. Pilhas\nseguem o modelo LIFO, enquanto filas utilizam FIFO.\nListas encadeadas permitem inserções dinâmicas. Árvores binárias e grafos são utilizados em algoritmos\ncomplexos.\nOs algoritmos de ordenação mais cobrados incluem BubbleSort, QuickSort e MergeSort. Também é\nimportante estudar busca linear e busca binária.\nA análise de complexidade é um dos temas mais importantes. Big-O mede eficiência de algoritmos\nconsiderando tempo e memória.",
+                    "similaridade": 0.4454021155834198
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-24T23:33:35.395428",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "próxima quarta",
+            "tipo": null
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:33:46.782910",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "segunda",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:34:56.376305",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": "prova"
+        },
+        "saida": [
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:37:13.224241",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "quarta",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:37:58.055332",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "segunda",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:39:13.662122",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "amanha",
+            "tipo": "aula"
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:43:50.774355",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "amanha",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:45:09.816177",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "amanha",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:45:21.478536",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "amanha",
+            "tipo": "aula"
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:47:46.243472",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:48:08.836139",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "quarta",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:48:29.728859",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            },
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:48:59.572459",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "hoje",
+            "tipo": "aula"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:49:27.343361",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "quinta",
+            "tipo": "prova"
+        },
+        "saida": []
+    },
+    {
+        "data_hora": "2026-05-24T23:49:40.535396",
+        "ferramenta": "ferramenta_consultar_agenda_por_data",
+        "entrada": {
+            "texto_data": "dia 30",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-24T23:50:14.853317",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": 1
+        },
+        "saida": {
+            "id": 1,
+            "descricao": "Estudar RAG para a prova de IA.",
+            "concluida": true
+        }
+    },
+    {
+        "data_hora": "2026-05-25T00:25:12.569046",
+        "ferramenta": "ferramenta_buscar_material_rag",
+        "entrada": {
+            "pergunta": "me faça um resumo sobre a linguagem de programação C++"
+        },
+        "saida": {
+            "resposta": "C++ é uma linguagem de programação de propósito geral, criada a partir da linguagem C, que permite escrever programas eficientes com bom controle sobre memória e desempenho, mas também com recursos modernos de organização de código, como classes, objetos, templates e bibliotecas prontas.\n\n**Principais características:**\n\n*   **Alto desempenho:** Permite criar programas rápidos e eficientes.\n*   **Controle de memória:** O programador pode gerenciar a memória diretamente quando necessário.\n*   **Multiparadigma:** Suporta programação procedural, orientada a objetos e genérica.\n*   **Portabilidade:** Um mesmo código pode ser compilado para diferentes sistemas.\n*   **Biblioteca padrão:** Possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.\n\n**Conceitos essenciais:**\n\n*   **Programação orientada a objetos:** O código é organizado em classes e objetos, facilitando a organização e reutilização.\n*   **Compilação:** O código-fonte precisa ser transformado em um arquivo executável por um compilador.\n\n**Onde C++ é utilizado:**\n\n*   Desenvolvimento de jogos e motores gráficos.\n*   Sistemas operacionais, drivers e softwares próximos ao hardware.\n*   Aplicações científicas, simuladores e programas de engenharia.\n*   Sistemas embarcados, robótica e dispositivos com recursos limitados.\n*   Softwares que precisam processar muitos dados com alta performance.",
+            "chunks_usados": [
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 1\n O que e a linguagem de programacao\n C++?\n Resumo introdutorio em 2 paginas sobre origem, caracteristicas, usos e conceitos\n principais.\n1. Visao geral\nC++ e uma linguagem de programacao de proposito geral, criada a partir da linguagem C.\nEla foi desenvolvida para permitir que o programador escreva programas eficientes, com\nbom controle sobre memoria e desempenho, mas tambem com recursos modernos de\norganizacao de codigo, como classes, objetos, templates e bibliotecas prontas.\nNa pratica, C++ e muito usada quando o sistema precisa ser rapido, controlar bem os\nrecursos do computador ou trabalhar proximo ao hardware. Por isso, aparece em jogos,\nsimuladores, sistemas embarcados, softwares de engenharia, navegadores, bancos de dados,\nsistemas operacionais e aplicacoes de alto desempenho.\n2. Origem e relacao com C\nA linguagem C++ surgiu como uma extensao da linguagem C. A ideia foi manter a eficiencia\ne a proximidade com o hardware, mas adicionar recursos de programacao orientada a\nobjetos. Por esse motivo, muitos codigos escritos em C podem ser entendidos ou adaptados\nem C++, embora C++ tenha evoluido bastante e hoje possua recursos proprios.\n3. Principais caracteristicas\n Alto desempenho: permite criar programas rapidos e eficientes.\n Controle de memoria: o programador pode gerenciar memoria diretamente quando necessario.\n Multiparadigma: suporta programacao procedural, orientada a objetos e generica.\n Portabilidade: um mesmo codigo pode ser compilado para diferentes sistemas, com ajustes\nquando preciso.\n Biblioteca padrao: possui estruturas prontas, como vetores, filas, mapas, strings e algoritmos.\n4. Exemplo simples de codigo\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Ola, mundo!\" << endl;\n    return 0;\n}\nNesse exemplo, o programa usa a biblioteca iostream para exibir uma mensagem na tela. A\nfuncao main e o ponto de entrada do programa, ou seja, o local onde a execucao comeca.",
+                    "similaridade": 0.7674382925033569
+                },
+                {
+                    "documento": "resumo_linguagem_cpp.pdf",
+                    "conteudo": "Resumo - Linguagem de Programacao C++\nMaterial de estudo\nPagina 2\n Conceitos essenciais de C++\n Uma linguagem poderosa, mas que exige atencao com organizacao, memoria e tipos\n de dados.\n5. Programacao orientada a objetos\nUm dos pontos mais importantes de C++ e o suporte a programacao orientada a objetos.\nNesse modelo, o codigo e organizado em classes e objetos. Uma classe funciona como um\nmolde, definindo atributos e comportamentos. Um objeto e uma instancia dessa classe, ou\nseja, algo criado a partir desse molde.\nEsse estilo ajuda a organizar sistemas maiores, separando responsabilidades e facilitando a\nreutilizacao de codigo. Conceitos como encapsulamento, heranca e polimorfismo sao\nbastante usados em projetos escritos em C++.\n6. Compilacao\nC++ e uma linguagem compilada. Isso significa que o codigo-fonte escrito pelo programador\nprecisa passar por um compilador, que transforma o programa em um arquivo executavel.\nEsse processo geralmente deixa o programa final mais rapido, pois ele roda diretamente na\nmaquina depois de compilado.\n7. Vantagens e desafios\nVantagens\nDesafios\nExcelente desempenho e grande controle sobre\nrecursos do sistema.\nSintaxe mais detalhada e curva de aprendizado\nmaior.\nMuito usada em areas que exigem velocidade e\neficiencia.\nErros de memoria podem ocorrer se o codigo nao\nfor bem cuidado.\nPossui bibliotecas e ferramentas maduras.\nProjetos grandes exigem boa organizacao e\npadroes de codigo.\n8. Onde C++ e utilizado?\n Desenvolvimento de jogos e motores graficos.\n Sistemas operacionais, drivers e softwares proximos ao hardware.\n Aplicacoes cientificas, simuladores e programas de engenharia.\n Sistemas embarcados, robótica e dispositivos com recursos limitados.\n Softwares que precisam processar muitos dados com alta performance.\n9. Conclusao\nC++ e uma linguagem importante porque combina eficiencia, flexibilidade e recursos\navancados de programacao. Ela pode ser mais complexa para iniciantes, mas oferece grande\npoder para criar sistemas robustos e de alto desempenho. Por isso, continua sendo muito\nvalorizada em areas onde velocidade, controle e confiabilidade sao fundamentais.",
+                    "similaridade": 0.6739602088928223
+                },
+                {
+                    "documento": "teste.txt",
+                    "conteudo": "Modelos de linguagem são sistemas de inteligência artificial treinados para compreender e gerar texto. Eles podem ser usados em assistentes virtuais, sistemas de perguntas e respostas, geração de resumos e apoio educacional.\n\nEmbeddings são representações numéricas de textos, palavras ou documentos. Eles permitem comparar significados de forma matemática. Textos com significados parecidos tendem a ter embeddings próximos.",
+                    "similaridade": 0.55457603931427
+                }
+            ]
+        }
+    },
+    {
+        "data_hora": "2026-05-25T00:26:23.550594",
+        "ferramenta": "ferramenta_consultar_agenda_por_periodo",
+        "entrada": {
+            "periodo": "essa_semana",
+            "tipo": null
+        },
+        "saida": [
+            {
+                "id": 1,
+                "tipo": "aula",
+                "titulo": "Aula de Inteligência Artificial",
+                "data": "2026-05-25",
+                "horario": "19:00",
+                "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+            },
+            {
+                "id": 2,
+                "tipo": "prova",
+                "titulo": "Prova de Inteligência Artificial",
+                "data": "2026-05-30",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de IA"
+            },
+            {
+                "id": 3,
+                "tipo": "prova",
+                "titulo": "Prova de Computação Distribuída",
+                "data": "2026-05-24",
+                "horario": "19:00",
+                "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+            }
+        ]
+    },
+    {
+        "data_hora": "2026-05-25T00:27:17.193089",
+        "ferramenta": "ferramenta_concluir_tarefa",
+        "entrada": {
+            "id_tarefa": 2
+        },
+        "saida": {
+            "id": 2,
+            "descricao": "Estudar KNN para a prova de IA.",
+            "concluida": true
+        }
+    }
+]

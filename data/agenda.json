@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "tipo": "aula",
+        "titulo": "Aula de Inteligência Artificial",
+        "data": "2026-05-25",
+        "horario": "19:00",
+        "descricao": "Aula sobre agentes inteligentes e modelos de linguagem"
+    },
+    {
+        "id": 2,
+        "tipo": "prova",
+        "titulo": "Prova de Inteligência Artificial",
+        "data": "2026-05-30",
+        "horario": "19:00",
+        "descricao": "Avaliação sobre conceitos iniciais de IA"
+    },
+    {   
+        "id": 3,
+        "tipo": "prova",
+        "titulo": "Prova de Computação Distribuída",
+        "data": "2026-05-24",
+        "horario": "19:00",
+        "descricao": "Avaliação sobre conceitos iniciais de computação distribuída"
+
+    }
+]
