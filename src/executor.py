@@ -6,7 +6,10 @@ from tools import (
     ferramenta_concluir_tarefa,
     ferramenta_consultar_agenda_por_periodo,
     ferramenta_consultar_agenda_por_data,
-    ferramenta_buscar_material_rag
+    ferramenta_buscar_material_rag,
+    ferramenta_planejar_estudos,
+    ferramenta_gerar_exercicios,
+    ferramenta_avaliar_resposta
 )
 
 
@@ -70,6 +73,17 @@ def executar_ferramenta(decisao_gemma):
         return ferramenta_buscar_material_rag(
             parametros.get("pergunta", "")
         )
+    
+    elif nome_ferramenta == "ferramenta_planejar_estudos":
+        return ferramenta_planejar_estudos(
+            parametros.get("objetivo", "")
+        )
+    
+    elif nome_ferramenta == "ferramenta_gerar_exercicios":
+        return ferramenta_gerar_exercicios(
+            parametros.get("tema", ""),
+            parametros.get("quantidade", 5)
+        )
 
     elif nome_ferramenta == "resposta_geral":
         return {
@@ -77,6 +91,12 @@ def executar_ferramenta(decisao_gemma):
             "mensagem": parametros.get("pergunta", "")
         }
 
+    elif nome_ferramenta == "ferramenta_avaliar_resposta":
+        return ferramenta_avaliar_resposta(
+            parametros.get("tema", ""),
+            parametros.get("resposta_usuario", "")
+        )
+    
     else:
         return {
             "tipo_resultado": "resposta_geral",

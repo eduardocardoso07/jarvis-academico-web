@@ -7,17 +7,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# Cliente responsável por se conectar com a LLM Gemma 12B
+# Cliente responsável por se conectar com a LLM
 client = OpenAI(
-    base_url="https://llm.liaufms.org/v1/gemma-3-12b-it",
+    base_url="https://llm.liaufms.org/v1/qwen2-5-14b-instruct-awq",
     api_key=os.getenv("GEMMA_API_KEY")
 )
+
+
+# Nome do modelo usado no endpoint novo
+MODELO_LLM = "Qwen/Qwen2.5-14B-Instruct-AWQ"
 
 
 # Função responsável por enviar uma pergunta simples para a LLM
 def perguntar_llm(pergunta):
     resposta = client.chat.completions.create(
-        model="google/gemma-3-12b-it",
+        model=MODELO_LLM,
         messages=[
             {
                 "role": "user",
@@ -74,7 +78,45 @@ Use para perguntas como:
 Parâmetro necessário:
 - pergunta: deve ser a pergunta original do usuário
 
-7. resposta_geral
+7. ferramenta_planejar_estudos
+Use quando o usuário pedir um plano de estudos, quiser saber o que priorizar, como organizar os estudos ou como se preparar para uma prova/trabalho.
+Use para perguntas como:
+- "Monte um plano de estudos para a prova"
+- "O que devo priorizar hoje?"
+- "Como posso organizar meus estudos esta semana?"
+- "Me ajude a estudar para a prova de IA"
+Parâmetro necessário:
+- objetivo: deve ser a pergunta original do usuário
+
+8. ferramenta_gerar_exercicios
+
+Use quando o usuário quiser exercícios, questões, perguntas para praticar ou testar conhecimento.
+
+Use para perguntas como:
+- "Crie exercícios sobre embeddings"
+- "Gere 5 questões sobre RAG"
+- "Faça perguntas sobre KNN"
+- "Monte um simulado de IA"
+
+Parâmetros:
+- tema
+- quantidade (opcional)
+
+9. ferramenta_avaliar_resposta
+
+Use quando o usuário quiser que o sistema avalie, corrija ou dê feedback sobre uma resposta dele.
+
+Use para perguntas como:
+- "Avalie minha resposta sobre embeddings: ..."
+- "Corrija minha resposta sobre RAG: ..."
+- "Minha resposta está certa? ..."
+- "Dê uma nota para minha explicação sobre KNN: ..."
+
+Parâmetros:
+- tema
+- resposta_usuario
+
+10. resposta_geral
 Use quando o usuário fizer uma saudação, agradecimento, pergunta geral ou uma continuação da conversa que não exija necessariamente agenda, tarefas ou materiais.
 Use para mensagens como:
 - "olá"
@@ -101,6 +143,9 @@ Regras importantes:
 - Para perguntas sobre materiais de estudo, use ferramenta_buscar_material_rag.
 - Para perguntas sobre tarefas, use uma das ferramentas de tarefas.
 - Para perguntas sobre agenda, use uma das ferramentas de agenda.
+- Para pedidos de exercícios, simulados, questões ou perguntas de revisão, use ferramenta_gerar_exercicios, e não escreva "segundo o texto forneciddo..." ou algo semelhante, apenas produza as perguntas.
+- Para pedidos de avaliação, correção, nota ou feedback sobre uma resposta do estudante, use ferramenta_avaliar_resposta.
+- Para pedidos de plano de estudos, organização de estudos, preparação para prova ou prioridade do dia, use ferramenta_planejar_estudos.
 - Se a pergunta for apenas saudação, agradecimento ou conversa geral, use resposta_geral.
 - Se o usuário disser "essa", "ela", "essa tarefa" ou "essa também", use o histórico da conversa para tentar entender a referência.
 - Se não conseguir identificar uma tarefa específica, use resposta_geral em vez de inventar um ID.
@@ -128,6 +173,32 @@ Exemplo para RAG:
     }}
 }}
 
+Exemplo para planejamento de estudos:
+{{
+    "ferramenta": "ferramenta_planejar_estudos",
+    "parametros": {{
+        "objetivo": "Monte um plano de estudos para a prova de IA"
+    }}
+}}
+
+Exemplo para geração de exercícios:
+{{
+    "ferramenta": "ferramenta_gerar_exercicios",
+    "parametros": {{
+        "tema": "embeddings",
+        "quantidade": 5
+    }}
+}}
+
+Exemplo para avaliação de resposta:
+{{
+    "ferramenta": "ferramenta_avaliar_resposta",
+    "parametros": {{
+        "tema": "embeddings",
+        "resposta_usuario": "Embeddings são números que representam textos."
+    }}
+}}
+
 Exemplo para resposta geral:
 {{ 
     "ferramenta": "resposta_geral",
@@ -141,7 +212,7 @@ Pergunta do usuário:
 """
 
     resposta = client.chat.completions.create(
-        model="google/gemma-3-12b-it",
+        model=MODELO_LLM,
         messages=[
             {
                 "role": "user",
@@ -151,6 +222,7 @@ Pergunta do usuário:
     )
 
     return resposta.choices[0].message.content
+
 
 # Função responsável por gerar uma resposta final amigável para o usuário
 def gerar_resposta_final(pergunta_usuario, resultado_ferramenta):
@@ -178,7 +250,11 @@ Regras:
 - Se houver tarefas, liste as tarefas de forma clara.
 - Se uma tarefa foi adicionada, confirme de forma natural.
 - Se uma tarefa foi concluída, confirme de forma natural.
+- Se o resultado tiver objetivo, tarefas, eventos_semana e materiais_relevantes, isso significa que é um planejamento de estudos. Nesse caso, monte um plano organizado com prioridades, horários sugeridos, tarefas pendentes, eventos da semana e materiais recomendados. Não apenas liste os dados: transforme-os em um plano prático de estudo.
+- Para planejamento de estudos, priorize primeiro provas e trabalhos próximos, depois tarefas pendentes (sempre comente sobre a importância do tema da tarefa para o planejamento solicitado) e depois revisão dos materiais mais relevantes.
 - Se for uma resposta de material de estudo, responda com base no conteúdo retornado.
+- Em planejamentos de estudo, só diga que existe prova, aula ou evento marcado se isso aparecer dentro de eventos_semana. Se a informação aparecer apenas em tarefas, trate como tarefa pendente, não como evento confirmado da agenda.
+- Ao montar plano de estudos para um tema específico, destaque primeiro tarefas e materiais diretamente relacionados ao tema. Outras tarefas pendentes podem aparecer apenas como prioridades secundárias.
 - Responda em português do Brasil.
 - Você NÃO deve responder usando conhecimento geral próprio.
 - Você só pode responder com base no resultado da ferramenta executada.
@@ -186,11 +262,13 @@ Regras:
 - Não diga que foi treinado com livros, sites ou textos externos.
 - Não mencione base de treinamento.
 - Para perguntas gerais como "olá", "obrigado" ou "o que você pode fazer?", responda normalmente e de forma natural.
+- Se o resultado tiver "resposta" e "chunks_usados", preserve integralmente o conteúdo de "resposta". Não resuma, não reescreva e não remova partes como "Resposta esperada", "Nota", "Classificação" ou "Resposta ideal".
+- Apresente as respostas de uma forma mais organizada, principalmente se for perguntas para gerar exercicios, planejamento de estudos, resumos, apresente com quebra de texto, visualmente bonito e organizado.
 Resposta final:
 """
 
     resposta = client.chat.completions.create(
-        model="google/gemma-3-12b-it",
+        model=MODELO_LLM,
         messages=[
             {
                 "role": "user",

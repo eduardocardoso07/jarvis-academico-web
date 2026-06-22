@@ -1,52 +1,17 @@
 [
     {
         "id": 1,
-        "descricao": "Estudar RAG para a prova de IA.",
-        "concluida": true
+        "descricao": "estudar para a prova de ia",
+        "concluida": false
     },
     {
         "id": 2,
-        "descricao": "Estudar KNN para a prova de IA.",
-        "concluida": true
+        "descricao": "fazer trabalho de IA",
+        "concluida": false
     },
     {
         "id": 3,
-        "descricao": "Estudar para o trabalho de IA.",
-        "concluida": true
-    },
-    {
-        "id": 4,
-        "descricao": "Estudar para a prova de IHC.",
-        "concluida": true
-    },
-    {
-        "id": 5,
-        "descricao": "revisar o conteúdo de embeddings",
-        "concluida": true
-    },
-    {
-        "id": 6,
-        "descricao": "- estudar para o trabalho de IHC\n- fazer o trabalho do Bob",
-        "concluida": false
-    },
-    {
-        "id": 7,
-        "descricao": "mexer no código do jarvis",
-        "concluida": false
-    },
-    {
-        "id": 8,
-        "descricao": "Fazer a correção do front end",
-        "concluida": false
-    },
-    {
-        "id": 9,
-        "descricao": "mexer no codigo fonte da função decidir_resposta",
-        "concluida": false
-    },
-    {
-        "id": 10,
-        "descricao": "Mexer na lógica do tool calling",
+        "descricao": "Rever o conteúdo de KNN",
         "concluida": true
     }
 ]

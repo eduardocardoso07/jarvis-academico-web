@@ -5,3 +5,4 @@ scikit-learn
 pypdf
 streamlit
 torchvision
+pyMuPDF

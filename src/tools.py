@@ -2,7 +2,14 @@ from tarefas import adicionar_tarefa, listar_tarefas, concluir_tarefa
 from agenda import buscar_eventos_por_data, buscar_eventos_por_periodo, filtrar_eventos_por_tipo
 from datas import resolver_periodo, resolver_data_especifica
 from logger import registrar_log
-from rag import carregar_documentos, dividir_em_chunks, gerar_embeddings_chunks, buscar_chunks_por_embedding, gerar_resposta_rag
+from rag import(carregar_documentos, 
+dividir_em_chunks, 
+gerar_embeddings_chunks, 
+buscar_chunks_por_embedding,
+gerar_resposta_rag, 
+gerar_exercicios_rag,
+avaliar_resposta_rag
+)
 
 # Ferramenta responsável por listar todas as tarefas cadastradas
 def ferramenta_listar_tarefas():
@@ -158,6 +165,132 @@ def ferramenta_buscar_material_rag(pergunta):
 
     registrar_log(
         nome_ferramenta="ferramenta_buscar_material_rag",
+        entrada=entrada,
+        saida=saida
+    )
+
+    return saida
+
+# combinando tarefas agenda e materiais de estudo via RAG
+def ferramenta_planejar_estudos(objetivo):
+    entrada = {
+        "objetivo": objetivo
+    }
+
+    # Busca tarefas cadastradas
+    tarefas = listar_tarefas()
+
+    tarefas_pendentes = []
+
+    for tarefa in tarefas:
+        if tarefa["concluida"] == False:
+            tarefas_pendentes.append(tarefa)
+
+    # Busca eventos da semana
+    inicio, final = resolver_periodo("essa_semana")
+
+    if inicio is None or final is None:
+        eventos_semana = []
+    else:
+        eventos_semana = buscar_eventos_por_periodo(inicio, final)
+
+    # Busca materiais relacionados ao objetivo do plano
+    documentos = carregar_documentos()
+    chunks = dividir_em_chunks(documentos)
+    chunks = gerar_embeddings_chunks(chunks)
+    chunks_relevantes = buscar_chunks_por_embedding(objetivo, chunks)
+
+    materiais = [
+        {
+            "documento": chunk["documento"],
+            "conteudo": chunk["conteudo"],
+            "similaridade": float(chunk["similaridade"])
+        }
+        for chunk in chunks_relevantes
+    ]
+
+    saida = {
+        "objetivo": objetivo,
+        "tarefas": tarefas_pendentes,
+        "eventos_semana": eventos_semana,
+        "materiais_relevantes": materiais
+    }
+
+    registrar_log(
+        nome_ferramenta="ferramenta_planejar_estudos",
+        entrada=entrada,
+        saida=saida
+    )
+
+    return saida
+
+# Ferramenta responsável por gerar exercícios com base nos documentos usando RAG
+def ferramenta_gerar_exercicios(tema, quantidade=5):
+    entrada = {
+        "tema": tema,
+        "quantidade": quantidade
+    }
+
+    documentos = carregar_documentos()
+    chunks = dividir_em_chunks(documentos)
+    chunks = gerar_embeddings_chunks(chunks)
+    chunks_relevantes = buscar_chunks_por_embedding(tema, chunks)
+
+    resposta = gerar_exercicios_rag(tema, chunks_relevantes, quantidade)
+
+    saida = {
+        "resposta": resposta,
+        "chunks_usados": [
+            {
+                "documento": chunk["documento"],
+                "conteudo": chunk["conteudo"],
+                "similaridade": float(chunk["similaridade"])
+            }
+            for chunk in chunks_relevantes
+        ]
+    }
+
+    registrar_log(
+        nome_ferramenta="ferramenta_gerar_exercicios",
+        entrada=entrada,
+        saida=saida
+    )
+
+    return saida
+
+
+# Ferramenta responsável por avaliar uma resposta do estudante
+def ferramenta_avaliar_resposta(tema, resposta_usuario):
+    entrada = {
+        "tema": tema,
+        "resposta_usuario": resposta_usuario
+    }
+
+    documentos = carregar_documentos()
+    chunks = dividir_em_chunks(documentos)
+    chunks = gerar_embeddings_chunks(chunks)
+    chunks_relevantes = buscar_chunks_por_embedding(tema, chunks)
+
+    avaliacao = avaliar_resposta_rag(
+        tema,
+        resposta_usuario,
+        chunks_relevantes
+    )
+
+    saida = {
+        "avaliacao": avaliacao,
+        "chunks_usados": [
+            {
+                "documento": chunk["documento"],
+                "conteudo": chunk["conteudo"],
+                "similaridade": float(chunk["similaridade"])
+            }
+            for chunk in chunks_relevantes
+        ]
+    }
+
+    registrar_log(
+        nome_ferramenta="ferramenta_avaliar_resposta",
         entrada=entrada,
         saida=saida
     )

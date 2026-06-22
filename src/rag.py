@@ -2,7 +2,7 @@ import os
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from gemma import perguntar_llm
-from pypdf import PdfReader
+import fitz
 
 # Caminho da pasta onde ficam os documentos
 CAMINHO_DOCUMENTOS = "data/documentos"
@@ -15,13 +15,12 @@ modelo_embeddings = SentenceTransformer("all-MiniLM-L6-v2")
 def extrair_texto_pdf(caminho_arquivo):
     texto_completo = ""
 
-    leitor_pdf = PdfReader(caminho_arquivo)
+    with fitz.open(caminho_arquivo) as documento:
+        for pagina in documento:
+            texto_pagina = pagina.get_text()
 
-    for pagina in leitor_pdf.pages:
-        texto_pagina = pagina.extract_text()
-
-        if texto_pagina is not None:
-            texto_completo = texto_completo + texto_pagina + "\n\n"
+            if texto_pagina:
+                texto_completo = texto_completo + texto_pagina + "\n\n"
 
     return texto_completo
 
@@ -223,6 +222,106 @@ def gerar_resposta_rag(pergunta, chunks_relevantes):
     {pergunta}
 
     Resposta:
+    """
+
+    resposta = perguntar_llm(prompt)
+
+    return resposta
+
+# Função responsável por gerar exercícios usando os trechos recuperados pelo RAG
+def gerar_exercicios_rag(tema, chunks_relevantes, quantidade=5):
+    contexto = ""
+
+    for indice, chunk in enumerate(chunks_relevantes, start=1):
+        contexto = contexto + f"\nTrecho {indice} - Documento: {chunk['documento']}\n"
+        contexto = contexto + chunk["conteudo"]
+        contexto = contexto + "\n"
+
+    prompt = f"""
+    Você é o JARVIS Acadêmico, um assistente de estudos.
+
+    Gere exercícios para ajudar o estudante a revisar o tema solicitado.
+
+    Use apenas os trechos de material fornecidos abaixo.
+
+    Se os trechos não tiverem informação suficiente, diga que não há material suficiente para gerar bons exercícios.
+
+    Trechos recuperados:
+    {contexto}
+
+    Tema solicitado:
+    {tema}
+
+    Quantidade de exercícios:
+    {quantidade}
+
+    Gere os exercícios neste formato:
+
+    1. Pergunta:
+    Resposta esperada:
+
+    2. Pergunta:
+    Resposta esperada:
+
+    Exercícios:
+    """
+
+    resposta = perguntar_llm(prompt)
+
+    return resposta
+
+# Função responsável por avaliar a resposta do estudante usando os trechos recuperados pelo RAG
+def avaliar_resposta_rag(tema, resposta_usuario, chunks_relevantes):
+    contexto = ""
+
+    for indice, chunk in enumerate(chunks_relevantes, start=1):
+        contexto = contexto + f"\nTrecho {indice} - Documento: {chunk['documento']}\n"
+        contexto = contexto + chunk["conteudo"]
+        contexto = contexto + "\n"
+
+    prompt = f"""
+    Você é o JARVIS Acadêmico, um assistente de estudos.
+
+    Avalie a resposta do estudante com base apenas nos trechos de material fornecidos.
+
+    Trechos recuperados:
+    {contexto}
+
+    Tema:
+    {tema}
+
+    Resposta do estudante:
+    {resposta_usuario}
+
+    Antes de avaliar:
+
+    1. Identifique todas as afirmações feitas pelo estudante.
+    2. Compare cada afirmação com os trechos recuperados.
+    3. Verifique cuidadosamente palavras de negação como:
+    - não
+    - nunca
+    - jamais
+    - sem
+    - não possui
+    - não suporta
+    4. Não considere uma afirmação correta apenas porque ela contém palavras-chave do material.
+    5. Se o estudante afirmar o oposto do material, considere a afirmação incorreta.
+
+    Depois faça a avaliação no formato:
+
+    Classificação: correta, parcialmente correta ou incorreta
+
+    Nota: de 0 a 10
+
+    Afirmações identificadas:
+
+    Análise de cada afirmação:
+
+    Pontos positivos:
+
+    Pontos que faltaram ou precisam melhorar:
+
+    Resposta ideal:
     """
 
     resposta = perguntar_llm(prompt)
