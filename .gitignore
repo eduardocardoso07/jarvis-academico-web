@@ -1,5 +1,12 @@
 .env
 .venv/
+venv/
 __pycache__/
 *.pyc
-data/logs.json
+*.pyo
+*.pyd
+.streamlit/secrets.toml
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
